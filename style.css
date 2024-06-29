@@ -1,0 +1,74 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#nav-bar {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1000px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#nav-bar-right {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  color: grey;
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+
+#main {
+  height: 800px;
+  animation: 25s linear infinite images;
+  background-image: url("");
+  background-repeat: no-repeat;
+  box-shadow: inset 0px 0px 0px 1000px rgba(0,0,0,0.4);
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes images {
+  0% {
+    background-image: url("https://vinarestaurant.com/images/gallery-img2.jpg");
+    }
+  25% {
+  background-image: url("https://vinarestaurant.com/images/gallery-img11.jpg");
+  }
+    50% {
+    background-image: url("https://images.unsplash.com/photo-1440020143730-090579c4d53c?q=80&w=1989&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+  75% {
+  background-image: url("https://images.unsplash.com/photo-1486868018400-960892a825f4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  }
+    100% {
+    background-image: url("https://images.unsplash.com/photo-1486868112685-2c39f26267b9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+} 
