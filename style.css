@@ -19,6 +19,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
 
@@ -119,4 +120,34 @@ html {
   top: 500px;
   font-size: 30px;
   letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+  #nav-bar {gap: 50px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  #nav-bar {gap: 200px;}
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  #nav-bar {gap: 300px;}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  #nav-bar {gap: 500px;}
+}
+
+@media only screen and (min-width: 1660) {
+  #nav-bar {gap: 1000px;}
+}
+
+#about-section {
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-top: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
