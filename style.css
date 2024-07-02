@@ -126,12 +126,39 @@ html {
   #nav-bar {gap: 50px;}
 }
 
+@media only screen and (min-width: 0px) and (max-width: 450px) {
+  #nav-bar {gap: 0px;}
+  #nav-bar-right {font-size: 10px;}
+  #logo {width: 100px;}
+}
+
+@media only screen and (min-width: 450px) and (max-width: 560px) {
+  #nav-bar {gap: 20px;}
+  #nav-bar-right {font-size: 11px;}
+  #logo {width: 100px;}
+}
+
+@media only screen and (min-width: 560px) and (max-width: 600px) {
+  #nav-bar {gap: 20px;}
+  #nav-bar-right {font-size: 13px;}
+  #logo {width: 100px;}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #nav-bar {gap: 60px;}
+  #nav-bar-right {font-size: 13px;}
+  #logo {width: 150px;}
+}
+
+
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
-  #nav-bar {gap: 200px;}
+  #nav-bar {gap: 170px;}
+  #nav-bar-right {font-size: 15px;}
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
   #nav-bar {gap: 300px;}
+  #nav-bar-right {font-size: 16px;}
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -150,4 +177,19 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+#circle-icon {
+  width: 15px;
+}
+
+#circle-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
 }
