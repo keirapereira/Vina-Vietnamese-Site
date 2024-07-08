@@ -193,3 +193,19 @@ html {
   display: flex;
   flex-direction: row;
 }
+
+@keyframes image {
+  0% {background-image: url("images/newspaper.jpg");}
+  50% {background-image: url("images/gallery-img1.jpg");}
+  100% {background-image: url("images/food-court.jpg");}
+}
+
+#image-animation {
+  width: 300px;
+  background-image: url("images/newspaper.jpg");
+  height: 300px;
+  animation-name: image;
+  animation: 12s image infinite ease-in-out;
+  animation-duration: 12s;
+
+}
